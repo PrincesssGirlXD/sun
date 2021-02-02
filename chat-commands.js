@@ -163,7 +163,7 @@ const commands = {
     if (!this.canTalk()) return;
     if (target.startsWith("\n")) target = target.slice(1);
     if (target.length >= 30000)
-      return this.errorReply("Your code must be under 30000 characters long!");
+      return this.errorReply("Your code must be under 8192 characters long!");
     const separator = "\n";
     if (target.includes(separator) || target.length > 150) {
       const params = target.split(separator);
@@ -504,14 +504,12 @@ const commands = {
       benga: 293,
       ash: 294,
 
-
-			bw2elesa: '#bw2elesa',
-			teamrocket: '#teamrocket',
-			yellow: '#yellow',
-			zinnia: '#zinnia',
-			clemont: '#clemont',
-			aeonic: '#aeonic',
-			wally: '#wally',
+      bw2elesa: "#bw2elesa",
+      teamrocket: "#teamrocket",
+      yellow: "#yellow",
+      zinnia: "#zinnia",
+      clemont: "#clemont",
+      wally: "#wally"
     };
     if (avatarTable.hasOwnProperty(avatarid)) {
       avatar = avatarTable[avatarid];
@@ -528,7 +526,7 @@ const commands = {
     user.avatar = avatar;
     if (!parts[1]) {
       this.sendReply(
-        `Avatar changed to:\n|raw|<img src="//play.pokemonshowdown.com/sprites/trainers-custom/${
+        `Avatar changed to:\n|raw|<img src="//play.pokemonshowdown.com/sprites/trainers/${
           (typeof avatar === "string" ? avatar.substr(1) : avatar)
         }.png" alt="" width="80" height="80" />`
       );

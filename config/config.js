@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 /**
  * The server port - the port to run Pokemon Showdown under
@@ -6,20 +6,20 @@
 exports.port = 8000;
 
 /**
- * The server Name - Being used to rename custom-plugins.
+ * The server Namr - Being used to rename custom-plugins.
  */
-exports.serverName = 'Server';
+exports.serverName = "Sun";
 
 /**
-* The server IP - Being used to show avatars in profile.
-*/
-exports.serverIp = 'serverip';
+ * The server IP - Being used to show avatars in profile.
+ */
+exports.serverIp = "megaleague.glitch.me";
 
 /**
  * The server address - the address at which Pokemon Showdown should be hosting
  *   This should be kept set to 0.0.0.0 unless you know what you're doing.
  */
-exports.bindaddress = '0.0.0.0';
+exports.bindaddress = "0.0.0.0";
 
 /**
  * workers - the number of networking child processes to spawn
@@ -86,26 +86,29 @@ exports.ofe = false;
  *   The PotD will always be in the #2 slot (not #1 so it won't be a lead)
  *   in every Random Battle team.
  */
-exports.potd = '';
+exports.potd = "";
 
 /**************************
-* Used To Enable/Disable *
-* Poof custom-plugin    *
-************************/
+ * Used To Enable/Disable *
+ * Poof custom-plugin    *
+ ************************/
 exports.poof = true;
 
 /****************************
-* Used to set expTimer ******
-* X amount of timer passed **
-* after last message before *
-* user can earn exp  ********
-* default to 30 seconds *****
-*****************************/
+ * Used to set expTimer ******
+ * X amount of timer passed **
+ * after last message before *
+ * user can earn exp  ********
+ * default to 30 seconds *****
+ *****************************/
 exports.expTimer = 30000;
 
 // add system operators.
-exports.special = ['xdragonprince','immortalsx'];
-
+exports.special = [
+  "xdragonprince",
+  "aadhikesh",
+  "mlhorizon"
+];
 /**
  * crash guard - write errors to log file instead of crashing
  *   This is normally not recommended - if Node wants to crash, the
@@ -388,7 +391,6 @@ exports.replsocketmode = 0o600;
  * Main is huge), and to do pinpoint hotpatching (like /nohotpatch).
  */
 exports.disablehotpatchall = false;
-exports.special = ["xdragonprince"];
 
 /**
  * permissions and groups:

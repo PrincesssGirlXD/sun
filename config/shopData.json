@@ -10,6 +10,13 @@
         "onbuy": "You have purchased a Global Declare. To redeem your Global Declare, do /usetoken declare, [message you want declared].. Note: PLease do it only when an Administrator(~) is online.",
         "info": "Globally declares a message to every room on the server. (Cannot be used for server advertisements, message must be approved by an administrator.)"
       },
+      "customavatar": {
+        "display": "Custom Avatar",
+        "price": 15,
+        "currency": "bucks",
+        "onbuy": "You have purchased a Custom Avatar. To redeem your Custom Avatar, do /usetoken avatar, [avatar image]<br/>Inappropriate images may be denied; 80x80 is the optimal image resolution. Note: PLease do it only when an Administrator(~) is online.<br/>",
+        "info": "Redeems a custom avatar to be applied to your name (You supply, must be .png or .gif format. Images must be 80x80 to display properly.)"
+      },
       "customcolor": {
         "display": "Hex Code",
         "price": 20,
@@ -17,7 +24,7 @@
         "onbuy": "You have purchased a Custom Name Color. To redeem your Custom Color, do /usetoken color, [hex color code]<br/>Colors must be easily visible on the website. Note: PLease do it only when an Administrator is online.<br/>",
         "info": "Redeems the ability to have your name color changed. Difficult to see colors are not allowed."
       },
-      
+
       "emote": {
         "display": "Emoticon",
         "price": 35,

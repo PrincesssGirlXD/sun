@@ -355,16 +355,15 @@ const commands = {
     });
   },
   hosthelp: [`/host [ip] - Gets the host for a given IP. Requires: & ~`],
-	
-	"!shrug": true,
-  shrug: function(target, room, user) {
-    if (!this.runBroadcast()) return;
-    this.sendReplyBox(
-      `<button class="button" name="send" value="¯\\_(ツ)_/¯"><b>Click to shrug</b> </button>`
-    );
+
+  gym: function(target, room, user) {
+    let popup =
+      "|html|" +
+      '<center><u><b>Gym challenges</b></u></center><br>You need to challenge the gym leader X Dragon Prince on level 100 SgGame anything goes format. If you defeated his 4 pokemons, you will get a shiny or a mega pokemon. You can get mega stone/shiny also by winning a big event or by buying in <a href="https://discord.gg/xCMv9kDv6b">here</a>.<br />';
+    user.popup(popup);
   },
 	
-	  customavatar: function(target, room, user) {
+	customavatar: function(target, room, user) {
     let popup =
       "|html|" +
       '<center><u><b>Custom Avatars</b></u></center><br>Custom avatars are given to staffs (% to ~) or to those who are in atleast 10th Level (type <code>/exp</code> for info). Asking for avatar will be ignored.<br> To Owner of the Server: If you dont know how to set avatar, please contact X Dragon Prince <a href="http://superb-platinum-basilisk.glitch.me-80.psim.us/">here</a>.<br />';
@@ -1687,7 +1686,7 @@ const commands = {
     this.sendReplyBox(
       `<strong>Room punishments</strong>:<br />` +
         `<strong>warn</strong> - Displays a popup with the rules.<br />` +
-        `<strong>Kick</strong> - Kicks a user out of the room. Can join again until its not a ban.<br />` +
+        `<strong>kick</strong> - Kicks a user out of the room. Can join again until its not a ban.<br />` +
         `<strong>mute</strong> - Mutes a user (makes them unable to talk) for 7 minutes.<br />` +
         `<strong>hourmute</strong> - Mutes a user for 60 minutes.<br />` +
         `<strong>ban</strong> - Bans a user (makes them unable to join the room) for 2 days.<br />` +
@@ -1713,18 +1712,14 @@ const commands = {
     if (!this.runBroadcast()) return;
     this.sendReplyBox(
       `Our Server is open source:<br />` +
-        	`- <a href="https://github.com/Zarel/Pokemon-Showdown/commits/master">What's new?</a><br />` +
-			`- <a href="https://github.com/TheImmortals/Alpha">Alpha GitHub Repository</a><br />` +
-			`- <a href="https://github.com/Zarel/Pokemon-Showdown-Client">Client source code</a><br />` +
-			`- <a href="https://github.com/Zarel/Pokemon-Showdown-Dex">Dex source code</a>`
+        `- <a href="https://sunserver.glitch.me/newstuffs.html">What's new?</a><br />` +
+        `- <a href="https://github.com/TheImmortals/Alpha">Alpha GitHub Repository</a><br />` +
+        `- <a href="https://sunserver.glitch.me/">Sun Website</a><br />` +
+        `- <a href="https://glitch.com/edit/#!/megaleague">Sun Source Code</a>`
     );
   },
-  opensourcehelp: [
-    `/opensource - Links to PS's source code repository.`,
-    `!opensource - Show everyone that information. Requires: + % @ * # & ~`
-  ],
-	
-	   "!usetokenhelp": true,
+
+  "!usetokenhelp": true,
   helpusetoken: "usetokenhelp",
   usetokenhelp: function(target, room, user) {
     if (!this.runBroadcast()) return;
@@ -1735,14 +1730,11 @@ const commands = {
         `<b>Note: Please use these commands only when an Administrator (~) is online.</b>`
     );
   },
-	
-	  customavatar: function(target, room, user) {
-    let popup =
-      "|html|" +
-      "<center><u><b>Custom Avatars</b></u></center><br>Custom avatars are given to staffs (% to ~) or to those who are in atleast 10th Level (type <code>/exp</code> for info). Asking for avatar will be ignored.<br />";
-    user.popup(popup);
-  },
 
+  opensourcehelp: [
+    `/opensource - Links to PS's source code repository.`,
+    `!opensource - Show everyone that information. Requires: + % @ * # & ~`
+  ],
 
   "!staff": true,
   staff: function(target, room, user) {
@@ -1776,6 +1768,102 @@ const commands = {
     if (!this.runBroadcast()) return;
     this.sendReplyBox(
       `Hi, GUYS Hi! Sup? NO Whats up! HOW ARE YOU! I AM FINE....`
+    );
+  },
+  "!immortalsx": true,
+  immortalsx: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<center><img src="https://cdn.discordapp.com/avatars/538627730921619486/a_0817c6d09758902d0e46a7e1d31f1964.gif" width="128" height="128"></center>`
+    );
+  },
+  "!xdragonprince": true,
+  xdragonprince: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<center><img src="https://images-ext-1.discordapp.net/external/V-DNAmDKoXZbwhsri1bXWd-biLNJQ496ZFI8juoJYIo/https/i.imgur.com/DZwKV0y.png" width="80" height="80"> <img src="https://images-ext-2.discordapp.net/external/ZujGdXWekDQMqURaRqEgWsHyn3gtywFIcmbUnjQjdGs/https/i.imgur.com/caMGeh8.png" width="80" height="80"></center>`
+    );
+  },
+  "!zera": true,
+  zera: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<div class="infobox"><div style="background-image: url(&quot;https://i.ibb.co/FVp2xTt/image.png&quot;)"><center><img src="https://i.ibb.co/zb7b04D/coollogo-com-270321145.gif" alt="Italian Trulli" width="370" height="180"><center><button style="margin: 1px 6px ; padding: 4px ; color: #fff ; border: solid 3px #000000 ; background: red ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 30% ; width: 120px" name="send" value="/profile shadezeraninja"><b>Profile</b> </button><br><button style="margin: 1px 6px ; padding: 4px ; color: #fff ; border: solid 3px #000000 ; background: red ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 30px 0px ; width: 120px" name="send" value="/azuremons showcase shade zeraninja"><b>Azuremon</b> </button><button style="margin: 1px 6px ; padding: 4px ; color: #fff ; border: solid 3px #000000 ; background: red ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 0px 30px ; width: 120px" name="send" value="/pets showcase shade zeraninja"><b>Pets</b></button></center><br><center><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user Bro Zeraninja"><img src="https://play.pokemonshowdown.com/sprites/ani-shiny/zeraora.gif" width="80" height="80"></button><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user Shade Zeraninja"><img src="https://play.pokemonshowdown.com/sprites/ani-shiny/rayquaza-mega.gif" width="80" height="80"></button><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user DaRk Bro ZeRaNinja"><img src="https://play.pokemonshowdown.com/sprites/ani-shiny/greninja-ash.gif" width="80" height="80"></button><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user EternalZeRaNinja"><img src="https://play.pokemonshowdown.com/sprites/ani/hydreigon.gif" width="80" height="80"></button></center><center><b><font color="blue "> Dragon Type user</font></b></center><br><button style="margin: 1px 6px ; padding: 4px ; color: white ; border: solid 3px red ; background-image: url(&quot;https://i.ibb.co/6yVKmh1/image.png&quot;) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 30px 30px ; width: 120px" name="send" value="Hi Shade ZeRaNinJa!"><b>Click</b> </button></center></div></div>`
+    );
+  },
+
+  "!shrug": true,
+  shrug: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<button class="button" name="send" value="¯\\_(ツ)_/¯"><b>Click to shrug</b> </button>`
+    );
+  },
+  "!startpokemonchain": true,
+  startpokemonchain: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<div class="broadcast-blue"><b><center><h3>A Game of Pokemon Chain is starting</h3></center><br><center>Type <code>/infopokemonchain</code> to know about the game.</center><br><center><button class="button" name="send" value="/msg xdragonprince, /me joined the ggame">Join</button></center></b><br><center>Please click the button only <b>once</b> or you will be disqualified</center></div>
+`
+    );
+  },
+
+  "!infopokemonchain": true,
+  infopokemonchain: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<b>The Pokemon Chain is like a Pokemon Atlas. There is a host who starts the game. When it starts, you need to press "Join" To enter the game. Then the game begins... You are invited to a chatroom by the host... You need to join the room. Then, the host makes a que of game players. Then the host picks a random pokemon, then the next player in the que to need to guess a pokemon which starts with the last letter of the random pokemon, and then the next player needs to guess a pokemon which starts with the last letter of the pokemon which was guessed by the player in the past and so on.</b>`
+    );
+  },
+
+  "!adminpokemonchain": true,
+  adminpokemonchain: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<button class="button" name="send" value="/startpokemonchain">Start the game</button> <button class="button" name="send" value="/infopokemonchain">Post Info</button> <button class="button" name="send" value="/j pokemonchain">Join room</button> `
+    );
+  },
+
+  "!blazy": true,
+  blazy: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<center><img style="margin: auto" src="https://images-ext-1.discordapp.net/external/PEZWo-r4hLk9TEvC0wOAmCK5F18tSFIcEhb_iA2qdSc/https/i.ibb.co/DVxfGNH/image.png" width="485" height="350"></center>`
+    );
+  },
+  "!tapu": true,
+  tapu: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<div style="background-image: url(&quot;https://i.ibb.co/khXkNCN/images-16.jpg&quot;)"><center><img src="https://i.ibb.co/n1rHGhN/cooltext373381588315561.gif" alt="Trulli" width="300" height="100"></center><br><br><br><center><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user mysticninetales128"><img src="https://i.ibb.co/2W3tGpT/tenor.gif" width="80" height="80"></button><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user Tapu j0j0"><img src="https://i.ibb.co/LYCyFgd/rsz-1images-1.jpg" width="80" height="80"></button><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user Ground Ant"><img src="https://i.ibb.co/FhbpL7g/images-13.jpg" width="80" height="80"></button></center><br><center></center><center><b><font color="red">(WE NEED JESTER POKEMON)</font></b></center><br><center><b><font color="red">Ghost Type User</font></b></center><br><center><button style="margin: 1px 6px ; padding: 4px ; color: white ; border: solid 3px red ; background-image: url(&quot;https://i.ibb.co/Jcnrxrr/images-17.jpg&quot;) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 0px 0px ; width: 120px" name="send" value="/msg tapuj0j0, YOU SUCK NERD"><b><font color="#FFFF00">Hello</font></b> </button><button style="margin: 1px 6px ; padding: 4px ; color: white ; border: solid 3px red ; background-image: url(&quot;https://i.ibb.co/Jcnrxrr/images-17.jpg&quot;) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 0px 0px ; width: 120px" name="send" value="/htmlbox jevils the best"><b><font color="#FFFF00">Click</font></b> </button><a href="https://www.youtube.com/channel/UCXg3jcNlfY_qxNzEw3R_hJA?app=desktop" target="_blank" rel="noopener"><button style="margin: 1px 6px ; padding: 4px ; color: white ; border: solid 3px red ; background-image: url(&quot;https://i.ibb.co/Jcnrxrr/images-17.jpg&quot;) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 0px 0px ; width: 120px"><b><font color="#FFFF00">YouTube</font></b> </button></a></center></div>`
+    );
+  },
+
+
+  //aadhikesh, actually this is not html... it looks like, if u add link the https crashes, so we use a \. Thats what javascript is. so if you need any edit, ask me
+
+  "!nirdosh": true,
+  nirdosh: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<img src="https://i.ibb.co/F6H84qG/image.png" alt="ImmortalsX" width="380" height="250">`
+    );
+  },
+
+  "!aadhi": true,
+  aadhi: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<div style="background: url(&quot;https://i.pinimg.com/originals/c1/1b/fe/c11bfedd8ab22aab0b981a2a8faf5214.jpg&quot;) no-repeat ; background-size: cover ; background-position: center ; border: solid 2px black"><center><br><div style="width: 100% ; background: rgba(9 , 0 , 0 , 0.3)"><hr style="border-color: black" width="100%"><hr style="border-color: black" width="100%"><img src="https://imgur.com/2wL66Sm.png" height="100" width="200"><br><br>&nbsp;<br><br><button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user FrostieNana"><img src="https://oppai.azure.lol/avatars/frostienana.png" width="80" height="80"></button>&nbsp;<button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user Aadhikesh"><img src="https://oppai.azure.lol/avatars/aadhikesh.gif" width="80" height="80"></button>&nbsp;<button style="background: none ; border: none ; cursor: pointer" name="parseCommand" value="/user Boywithnojob"><img src="https://oppai.azure.lol/avatars/boywithnojob.gif" width="80" height="80"></button>&nbsp;<br><br><button style="margin: 1px 6px ; padding: 4px ; color: #fff ; border: solid 3px #000000 ; background: rgba(0 , 0 , 0 , 0.3) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 45px 20px ; width: 120px" name="send" value="/msg Aadhikesh,Hi"><b>Hello</b></button><button style="margin: 1px 6px ; padding: 4px ; color: #fff ; border: solid 3px #000000 ; background: rgba(0 , 0 , 0 , 0.3) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 45px 20px ; width: 120px" name="send" value="/leave"><b>Gift</b></button><button style="margin: 1px 6px ; padding: 4px ; color: #fff ; border: solid 3px #000000 ; background: rgba(0 , 0 , 0 , 0.3) ; text-align: center ; text-shadow: 0 -1px 0 hsl(210 , 40% , 10%) ; border-radius: 45px 20px ; width: 120px" name="send" value="/htmlbox Aadhikesh#6477"><b>Discord ID</b></button><br><br><div><font color="#fff000"><b>Ghost Type User</b></font><br><img src="https://play.pokemonshowdown.com/sprites/gen5ani/gastly.gif" height="96" width="96"><img src="https://play.pokemonshowdown.com/sprites/gen5ani/haunter.gif" height="96" width="96"><img src="https://play.pokemonshowdown.com/sprites/gen5ani/gengar.gif" height="96" width="96"></div><br><br><br><br><audio src="https://cdn.glitch.com/f0e74f78-21ac-405b-847e-36f02573df56%2FFurry%20Shit1%20Hour%20LoopOG%20in%20Description!.mp3?v=1612004113457" controls=""></audio></div></center></div>
+`
+    );
+  },
+
+  "!diezelky": true,
+  diezelky: function(target, room, user) {
+    if (!this.runBroadcast()) return;
+    this.sendReplyBox(
+      `<img src="https://images-ext-2.discordapp.net/external/YLyJcfxabSz6H0zNAoIc-Zy4g8udqT5h78cQjWKs-e0/https/wallpapercave.com/wp/wp1860767.jpg?width=400&amp;height=225" alt="diezel" width="350" height="250">`
     );
   },
 
@@ -2339,7 +2427,7 @@ const commands = {
     let buffer = [];
     if (showAll || target === "staff") {
       buffer.push(
-        `<a href="https://www.smogon.com/forums/posts/6774482/">Staff FAQ</a>`
+        `<a href="https://sunserver.glitch.me/staffs.html">SuperB Platinum Staff FAQ</a>`
       );
     }
     if (showAll || target === "autoconfirmed" || target === "ac") {

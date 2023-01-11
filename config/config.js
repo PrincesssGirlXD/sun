@@ -8,13 +8,11 @@ exports.port = 8000;
 /**
  * The server Namr - Being used to rename custom-plugins.
  */
-exports.serverName = "Sun";
+exports.serverName = "Princessgirlxd";
 
 /**
  * The server IP - Being used to show avatars in profile.
  */
-exports.serverIp = "megaleague.glitch.me";
-
 /**
  * The server address - the address at which Pokemon Showdown should be hosting
  *   This should be kept set to 0.0.0.0 unless you know what you're doing.
